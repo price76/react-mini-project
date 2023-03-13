@@ -1,0 +1,84 @@
+.form-validation {
+  background-color: #fff;
+  padding: 16px;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 8px;
+  border: 1px solid #c7c4c4;
+  legend {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+  }
+  label {
+    font-size: 16px;
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .input-text input,
+  .input-email input,
+  .input-password input,
+  .input-date input,
+  .input-date-local input {
+    border: 1px solid rgb(226, 226, 226);
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    &:focus {
+      outline: none;
+      border: 1.5px solid rgb(180, 180, 180);
+    }
+  }
+  .input-text {
+  }
+  .two-col {
+    box-sizing: border-box;
+    margin: 10px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      li {
+        width: 100%;
+        position: relative;
+      }
+    }
+  }
+  .input-password {
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 40px;
+    }
+  }
+  .submit-btn {
+    width: 100%;
+    background: rgb(17, 25, 35);
+    border: none;
+    color: rgb(184, 187, 192);
+    border-radius: 8px;
+    padding: 7px 0;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .hasError {
+    color: red;
+    border-color: red;
+  }
+  .isOk {
+    color: green;
+    border-color: green;
+  }
+  .condition{
+    text-transform: capitalize ;
+  }
+}

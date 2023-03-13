@@ -1,0 +1,11 @@
+@import "./normalize";
+@import "./fonts";
+
+body {
+  background-color: antiquewhite;
+}
+*,
+html {
+  font-family: "Poppins";
+  font-weight: 200;
+}
