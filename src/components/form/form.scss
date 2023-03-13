@@ -46,6 +46,7 @@
       li {
         width: 100%;
         position: relative;
+ 
       }
     }
   }
@@ -73,12 +74,35 @@
   .hasError {
     color: red;
     border-color: red;
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: red;
+      display: inline-flex;
+    }
   }
   .isOk {
     color: green;
     border-color: green;
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: green;
+      display: inline-flex;
+    }
   }
-  .condition{
-    text-transform: capitalize ;
+  .condition {
+    text-transform: capitalize;
+    ul{
+      li{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
   }
 }
